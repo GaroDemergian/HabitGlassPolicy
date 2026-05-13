@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Privacy Policy for HabitGlass, an offline-first habit tracker for iPhone.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <title>HabitGlass Privacy Policy</title>
   <style>
     :root {
@@ -84,20 +86,23 @@
     }
 
     .mark {
-      display: grid;
       width: 38px;
       height: 38px;
-      place-items: center;
       border: 1px solid var(--border);
       border-radius: 12px;
-      background: linear-gradient(145deg, rgba(139, 92, 246, 0.18), rgba(255, 255, 255, 0.12));
+      background: var(--surface-strong);
       box-shadow: 0 10px 28px rgba(139, 92, 246, 0.18);
+      object-fit: cover;
     }
 
-    .mark svg {
-      width: 21px;
-      height: 21px;
-      color: var(--accent);
+    .hero-logo {
+      width: clamp(72px, 13vw, 104px);
+      height: clamp(72px, 13vw, 104px);
+      margin-bottom: 26px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 22px 54px rgba(139, 92, 246, 0.22);
+      object-fit: cover;
     }
 
     .nav-links {
@@ -299,12 +304,7 @@
   <main class="shell">
     <nav class="nav" aria-label="Privacy policy navigation">
       <a class="brand" href="./">
-        <span class="mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M7 3.75h10a1.75 1.75 0 0 1 1.75 1.75v13A1.75 1.75 0 0 1 17 20.25H7a1.75 1.75 0 0 1-1.75-1.75v-13A1.75 1.75 0 0 1 7 3.75Z" stroke="currentColor" stroke-width="1.7"/>
-            <path d="M8.5 8.2h7M8.5 12h7M8.5 15.8h4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-          </svg>
-        </span>
+        <img class="mark" src="assets/habitglass-logo.png" alt="" aria-hidden="true">
         <span>HabitGlass</span>
       </a>
       <div class="nav-links">
@@ -316,6 +316,7 @@
 
     <header class="hero">
       <div class="hero-copy">
+        <img class="hero-logo" src="assets/habitglass-logo.png" alt="HabitGlass app icon">
         <p class="eyebrow">Privacy Policy</p>
         <h1>Your habits stay on your device.</h1>
         <p class="lede">HabitGlass is an offline-first habit tracker for iPhone. It does not create accounts, collect personal data, run ads, use analytics SDKs, track users, or sell data.</p>
