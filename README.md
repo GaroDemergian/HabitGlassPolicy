@@ -1,4 +1,4 @@
-# Habit Glass Privacy Policy
+# HabitGlass Privacy Policy
 
 Static privacy policy site for HabitGlass.
 
